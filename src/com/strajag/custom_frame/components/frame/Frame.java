@@ -55,7 +55,7 @@ public class Frame extends JFrame implements WindowListener {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(exception.getMessage());
         for (int i = stackTraceElements.length - 1; i > 0; i--) {
-            if (!stackTraceElements[i].toString().startsWith("com.straykovsky")) { break; }
+            if (!stackTraceElements[i].toString().startsWith("com.strajag")) { break; }
             stringBuilder.append("\n").append(stackTraceElements[i]);
         }
         OptionPane.showMessageDialog(this, this, "Exception", stringBuilder.toString());
